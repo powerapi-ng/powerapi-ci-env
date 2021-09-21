@@ -1,6 +1,6 @@
 FROM debian:latest
 RUN apt update
-RUN apt install -y libvirt-dev procps
+RUN apt install -y libvirt-dev procps git
 RUN useradd -d /srv/powerapi -m powerapi
 WORKDIR /srv/powerapi
 USER powerapi
