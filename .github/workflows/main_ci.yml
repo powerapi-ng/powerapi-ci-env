@@ -20,3 +20,11 @@ jobs:
           push: true
           file: Dockerfile-powerapi-base-ci
           tags: powerapi/powerapi-base-ci:latest
+      - name: Build and push powerapi-build-deb image
+        uses: docker/build-push-action@ad44023a93711e3deb337508980b4b5e9bcdc5dc
+        with:
+          context: .
+          push: true
+          file: Dockerfile-powerapi-build-deb
+          tags: powerapi/powerapi-build-deb:latest
+

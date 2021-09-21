@@ -1,0 +1,3 @@
+FROM powerapi/powerapi-base-ci
+
+RUN apt install -y python3-stdeb dh-python
