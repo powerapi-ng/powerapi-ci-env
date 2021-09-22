@@ -27,4 +27,13 @@ jobs:
           push: true
           file: Dockerfile-powerapi-build-deb
           tags: powerapi/powerapi-build-deb:latest
+      - name: Build and push hwpc-sensor-build image
+        uses: docker/build-push-action@ad44023a93711e3deb337508980b4b5e9bcdc5dc
+        with:
+          context: .
+          push: true
+          file: Dockerfile-hwpc-sensor-build
+          tags: powerapi/hwpc-sensor-build:latest
+
+
 
